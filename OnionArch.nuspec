@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>OnionArch.Mvc</id>
+    <title>OnionArch.Mvc</title>
+    <version>0.0.5</version>
+    <iconUrl>https://raw.githubusercontent.com/GaProgMan/OnionArch/master/onionArch-nuget-logo.png</iconUrl>
+    <description>
+      ASP.NET Core MVC using the onion architecture and feature folders
+    </description>
+    <summary>
+      Creates a new ASP NET Core MVC application using the onion architecture and feature folders
+    </summary>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <authors>Jamie Taylor</authors>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <copyright>Copyright Jamie Taylor 2018</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/GaProgMan/OnionArch/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/GaProgMan/OnionArch</projectUrl>
+    <tags>Template, AspNet, Mvc, onion architecture, feature folders</tags>
+  </metadata>
+  <files>
+    <file src="template.config/*" target="src/.template.config" />
+    <file src="Onion.*/**" exclude="Onion.*/obj/**" target="src" />
+    <file src="OnionArch.sln" target="src" />
+    <file src="README.md" target="src" />
+    <file src=".idea/**" exclude="*" />
+    <file src=".git/**" exclude="*"/>
+    <file src="./**" exclude="*.png" />
+    <file src="./**" exclude="*.svg" />  
+  </files>
+</package>
